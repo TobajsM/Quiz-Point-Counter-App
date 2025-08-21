@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quiz Point Counter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+800f6f99f9c1822ff1aa6012b2e242605dc0bba7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+09585d72255c107bc1b8f4ad5d8a83aa07cbc51f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quiz Point Counter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quiz Point Counter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -411,7 +411,7 @@ target triple = "aarch64-unknown-linux-android21"
 		ptr @__compressedAssemblyData_77; uint8_t* data
 	}, ; 77: Xamarin.KotlinX.Serialization.Core.Jvm
 	%struct.CompressedAssemblyDescriptor {
-		i32 119808, ; uint32_t uncompressed_file_size
+		i32 120832, ; uint32_t uncompressed_file_size
 		i1 false, ; bool loaded
 		ptr @__compressedAssemblyData_78; uint8_t* data
 	}, ; 78: Quiz Point Counter
@@ -695,7 +695,7 @@ target triple = "aarch64-unknown-linux-android21"
 @__compressedAssemblyData_75 = internal dso_local global [86016 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_76 = internal dso_local global [18432 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_77 = internal dso_local global [89600 x i8] zeroinitializer, align 1
-@__compressedAssemblyData_78 = internal dso_local global [119808 x i8] zeroinitializer, align 1
+@__compressedAssemblyData_78 = internal dso_local global [120832 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_79 = internal dso_local global [24064 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_80 = internal dso_local global [14848 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_81 = internal dso_local global [9216 x i8] zeroinitializer, align 1

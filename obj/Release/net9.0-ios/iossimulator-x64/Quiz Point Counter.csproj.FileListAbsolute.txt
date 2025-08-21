@@ -310,3 +310,4 @@ C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\ne
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-ios\iossimulator-x64\Quiz Point Counter.pdb
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-ios\iossimulator-x64\Quiz Point Counter.genruntimeconfig.cache
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-ios\iossimulator-x64\ref\Quiz Point Counter.dll
+C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-ios\iossimulator-x64\Quiz Point Counter.sourcelink.json

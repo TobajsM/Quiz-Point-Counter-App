@@ -69,6 +69,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:Quiz_Point_Counter.ViewModel.PointCount.RoundNumber">
             <inheritdoc cref="F:Quiz_Point_Counter.ViewModel.PointCount.roundNumber"/>
@@ -87,6 +88,12 @@
         </member>
         <member name="P:Quiz_Point_Counter.ViewModel.PointCount.EndCounterCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Quiz_Point_Counter.ViewModel.PointCount.EndCounter"/>.</summary>
+        </member>
+        <member name="F:Quiz_Point_Counter.ViewModel.PointCount.toggleCheckCommand">
+            <summary>The backing field for <see cref="P:Quiz_Point_Counter.ViewModel.PointCount.ToggleCheckCommand"/>.</summary>
+        </member>
+        <member name="P:Quiz_Point_Counter.ViewModel.PointCount.ToggleCheckCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Quiz_Point_Counter.ViewModel.PointCount.ToggleCheck(Quiz_Point_Counter.Model.Player)"/>.</summary>
         </member>
         <member name="T:Quiz_Point_Counter.Resource">
             <summary>

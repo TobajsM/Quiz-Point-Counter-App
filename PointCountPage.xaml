@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Point_Counter.PointCountPage"
+             xmlns:viewmodel="clr-namespace:Quiz_Point_Counter.ViewModel"
+             x:DataType="viewmodel:PointCount"
+             xmlns:model="clr-namespace:Quiz_Point_Counter.Model">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="false"/>
+    </Shell.BackButtonBehavior>
+
+    <Grid RowDefinitions="70, 50, 10, *"
+          ColumnDefinitions=".2*, .6*, .2*"
+          RowSpacing="8">
+
+        <BoxView Color="#498AF5"
+                 Grid.RowSpan="2"
+                 Grid.ColumnSpan="3"/>
+
+        <!-- Header -->
+        <Label Text="Question number"
+               FontFamily="Santelo"
+               FontSize="25"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.Column="1"
+               Padding="20"/>
+
+        <!-- Question Counter -->
+        <Label Text="{Binding RoundNumber}"
+               FontSize="30"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               Grid.Row="1"
+               Grid.Column="1"/>
+
+        <Button Text="Finish"
+                FontFamily="Santelo"
+                FontSize="16"
+                BackgroundColor="#5D49F5"
+                Command="{Binding EndCounterCommand}"/>
+
+        <Button Text="Next"
+                FontFamily="Santelo"
+                FontSize="16"
+                Grid.Column="2"
+                BackgroundColor="#5D49F5"
+                Command="{Binding NextCounterCommand}"/>
+
+        <!-- Selection of successfull players -->
+        <CollectionView Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        ItemsSource="{Binding Names}">
+            
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Player">
+                    <Border BackgroundColor="#C4C5CC"
+                            StrokeThickness="5"
+                            Stroke="#B1B2BD">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10"/>
+                        </Border.StrokeShape>
+
+                        <Grid ColumnDefinitions=".9*, .1*">
+                            <Label Text="{Binding Name}"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="22"
+                                   Padding="8"/>
+
+                            <CheckBox IsChecked="{Binding IsChecked}"
+                                      Grid.Column="1"
+                                      VerticalOptions="Center"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

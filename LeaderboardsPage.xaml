@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Point_Counter.LeaderboardsPage"
+             xmlns:model="clr-namespace:Quiz_Point_Counter.Model">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False"/>
+    </Shell.BackButtonBehavior>
+
+    <Grid RowDefinitions="Auto, 10, 30, *, Auto"
+          ColumnDefinitions=".07*, .16*, .54*, .16*, .07*">
+        
+        <Label Text="Leaderboard 🏆"
+               FontSize="50"
+               BackgroundColor="Gold"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="5"/>
+
+        <!-- Position Header -->
+        <Border Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="#C4C4CC">
+ 
+            <Label Text="Nom."
+                   FontSize="15"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Border>
+
+        <!-- Name Header -->
+        <Border Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="#C4C4CC">
+
+            <Label Text="Name"
+                   FontSize="15"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Border>
+
+        <!-- Total points Header -->
+        <Border Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="#C4C4CC">
+
+            <Label Text="Points"
+                   FontSize="15"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Border>
+
+        <!-- Leaderboard table -->
+        <CollectionView Grid.Row="3"
+                        Grid.ColumnSpan="5"
+                        ItemsSource="{Binding Names}">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Player">
+                    <Grid ColumnDefinitions=".07*, .16*, .54*, .16*, .07*">
+                        
+                        <Border Grid.Column="1">
+                            <Label Text="{Binding Position}"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"/>
+                        </Border>
+                        
+                        <Border Grid.Column="2">
+                            <Label Text="{Binding Name}"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"/>
+                        </Border>
+                        
+                        <Border Grid.Column="3">
+                            <Label Text="{Binding Points}"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+      
+        <!-- Reset Button -->
+        <Button Text="Return to main menu"
+            Command="{Binding ReturnCommand}"
+            FontFamily="Santelo"
+            FontSize="25"
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"/>
+    </Grid>
+    
+</ContentPage>

@@ -59,7 +59,8 @@
                                 <Button Text="X"
                                         BackgroundColor="Red"
                                         Grid.Column="1"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlayerList}}, Path=RemovePlayerCommand}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlayerList}}, 
+                                                  Path=RemovePlayerCommand}"
                                         CommandParameter="{Binding .}"/>
                             </Grid>
                         </Border>

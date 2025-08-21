@@ -14,7 +14,7 @@ public partial class Player : ObservableObject
     string name;
 
     [ObservableProperty]
-    bool isChecked;
+    public bool isChecked;
 
     [ObservableProperty]
     int points;

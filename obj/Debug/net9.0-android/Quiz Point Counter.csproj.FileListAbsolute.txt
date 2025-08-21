@@ -961,3 +961,4 @@ C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Debug\net9
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Debug\net9.0-android\assets\Oswald.zip
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Debug\net9.0-android\assets\SANTELLO.ttf
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Debug\net9.0-android\assets\santello.zip
+C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Debug\net9.0-android\Quiz Point Counter.sourcelink.json

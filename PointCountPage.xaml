@@ -48,7 +48,7 @@
                 BackgroundColor="#5D49F5"
                 Command="{Binding NextCounterCommand}"/>
 
-        <!-- Selection of successfull players -->
+        <!-- Selection of successful players -->
         <CollectionView Grid.Row="3"
                         Grid.ColumnSpan="3"
                         ItemsSource="{Binding Names}">
@@ -64,12 +64,18 @@
                         </Border.StrokeShape>
 
                         <Grid ColumnDefinitions=".9*, .1*">
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PointCount}}, 
+                                                                Path=ToggleCheckCommand}"
+                                                      CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
                             <Label Text="{Binding Name}"
                                    VerticalTextAlignment="Center"
                                    FontSize="22"
                                    Padding="8"/>
 
-                            <CheckBox IsChecked="{Binding IsChecked}"
+                            <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}"
                                       Grid.Column="1"
                                       VerticalOptions="Center"/>
                         </Grid>

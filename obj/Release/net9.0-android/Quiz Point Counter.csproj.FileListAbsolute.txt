@@ -461,3 +461,4 @@ C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\ne
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\tobik\source\repos\Quiz Point Counter\Quiz Point Counter\obj\Release\net9.0-android\Quiz Point Counter.sourcelink.json

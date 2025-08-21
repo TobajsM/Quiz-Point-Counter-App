@@ -15,6 +15,7 @@ public partial class PointCount : ObservableObject
     [ObservableProperty]
     ObservableCollection<Player> names;
 
+    // Next Page
     [RelayCommand]
     async Task NextCounter()
     {
@@ -26,6 +27,7 @@ public partial class PointCount : ObservableObject
                 });
     }
 
+    // Finish the game
     [RelayCommand]
     async Task EndCounter()
     {
@@ -44,6 +46,8 @@ public partial class PointCount : ObservableObject
                     });
         }
     }
+
+    // Update player score
     void CountPoints()
     {
         foreach (var player in Names)
@@ -76,5 +80,12 @@ public partial class PointCount : ObservableObject
         {
             Names.Add(name);
         }
+    }
+
+    // If user tapped on name, un/check the checkbox
+    [RelayCommand]
+    void ToggleCheck(Player player)
+    {
+        player.IsChecked = !player.IsChecked;
     }
 }
